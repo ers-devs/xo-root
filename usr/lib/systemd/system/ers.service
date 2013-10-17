@@ -1,7 +1,7 @@
 [Unit]
 Description=ERS Service
-Requires=couchdb.service avahi-daemon.service
-After=couchdb.service avahi-daemon.service
+Requires=couchdb.service avahi-daemon.service ers-aggregator-sync.service
+After=couchdb.service avahi-daemon.service ers-aggregator-sync.service
 
 [Service]
 User=root
